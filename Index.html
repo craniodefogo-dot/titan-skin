@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Titan Skin</title>
+
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f5f5f5;
+    color: #171717;
+}
+
+header {
+    background: #111;
+    color: white;
+    padding: 18px 6%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: 900;
+}
+
+.logo span {
+    color: #d7ff3f;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+.hero {
+    padding: 70px 6%;
+    background: linear-gradient(120deg, #111, #292929);
+    color: white;
+}
+
+.hero h1 {
+    font-size: clamp(40px, 8vw, 72px);
+    margin: 0 0 15px;
+}
+
+.hero p {
+    font-size: 20px;
+    color: #ddd;
+}
+
+.btn {
+    display: inline-block;
+    background: #d7ff3f;
+    color: #111;
+    padding: 13px 22px;
+    border-radius: 9px;
+    text-decoration: none;
+    font-weight: 900;
+}
+
+section {
+    padding: 45px 6%;
+}
+
+h2 {
+    font-size: 32px;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 22px;
+}
+
+.card {
+    background: white;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px #0002;
+}
+
+.pics {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.pics img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+}
+
+.info {
+    padding: 18px;
+}
+
+.badge {
+    display: inline-block;
+    background: #d7ff3f;
+    padding: 5px 8px;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: 900;
+}
+
+.price {
+    font-size: 25px;
+    font-weight: 900;
+}
+
+.buy {
+    display: block;
+    text-align: center;
+    background: #111;
+    color: white;
+    padding: 12px;
+    border-radius: 8px;
+    text-decoration: none;
+    margin-top: 14px;
+    font-weight: 800;
+}
+
+footer {
+    background: #111;
+    color: #bbb;
+    text-align: center;
+    padding: 30px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">TITAN <span>SKIN</span></div>
+
+    <nav>
+        <a href="#produtos">Produtos</a>
+        <a href="#sobre">Sobre</a>
+    </nav>
+</header>
+
+<div class="hero">
+    <h1>Seu estilo.<br>Seu preço.</h1>
+
+    <p>
+        Roupas estilosas com preços que cabem no bolso.
+    </p>
+
+    <a class="btn" href="#produtos">
+        Ver produtos
+    </a>
+</div>
+
+<section id="produtos">
+
+<h2>Produtos em destaque</h2>
+
+<div class="products">
+
+<!-- PRODUTO 1 -->
+
+<article class="card">
+
+<div class="pics">
+
+<img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=800&q=80">
+
+<img src="https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?auto=format&fit=crop&w=800&q=80">
+
+</div>
+
+<div class="info">
+
+<span class="badge">OFERTA</span>
+
+<h3>Camiseta Essential</h3>
+
+<div class="price">R$ 39,90</div>
+
+<a class="buy" href="#comprar">
+Comprar
+</a>
+
+</div>
+
+</article>
+
+
+<!-- PRODUTO 2 -->
+
+<article class="card">
+
+<div class="pics">
+
+<img src="https://images.unsplash.com/photo-1562157873-818bc0726f68?auto=format&fit=crop&w=800&q=80">
+
+<img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=800&q=80">
+
+</div>
+
+<div class="info">
+
+<span class="badge">OFERTA</span>
+
+<h3>Camiseta Street</h3>
+
+<div class="price">R$ 44,90</div>
+
+<a class="buy" href="#comprar">
+Comprar
+</a>
+
+</div>
+
+</article>
+
+
+<!-- PRODUTO 3 -->
+
+<article class="card">
+
+<div class="pics">
+
+<img src="https://images.unsplash.com/photo-1556821840-3a63f95609a7?auto=format&fit=crop&w=800&q=80">
+
+<img src="https://images.unsplash.com/photo-1551488831-00ddcb6c6bd3?auto=format&fit=crop&w=800&q=80">
+
+</div>
+
+<div class="info">
+
+<span class="badge">OFERTA</span>
+
+<h3>Moletom Titan</h3>
+
+<div class="price">R$ 79,90</div>
+
+<a class="buy" href="#comprar">
+Comprar
+</a>
+
+</div>
+
+</article>
+
+
+<!-- PRODUTO 4 -->
+
+<article class="card">
+
+<div class="pics">
+
+<img src="https://images.unsplash.com/photo-1551028719-00167b16eac5?auto=format&fit=crop&w=800&q=80">
+
+<img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=800&q=80">
+
+</div>
+
+<div class="info">
+
+<span class="badge">OFERTA</span>
+
+<h3>Jaqueta Urban</h3>
+
+<div class="price">R$ 99,90</div>
+
+<a class="buy" href="#comprar">
+Comprar
+</a>
+
+</div>
+
+</article>
+
+</div>
+
+</section>
+
+<section id="sobre">
+
+<h2>Sobre a Titan Skin</h2>
+
+<p>
+Estilo, simplicidade e preços acessíveis.
+</p>
+
+</section>
+
+<footer>
+
+© 2026 Titan Skin
+
+</footer>
+
+</body>
+</html>
